@@ -1,0 +1,83 @@
+package minSpanningTree;
+Number of vertices in aGraph:5
+Edges of aGraph: 
+  
+ edge: (v0, v4), weight: 1 
+ edge: (v0, v2), weight: 3 
+ edge: (v0, v1), weight: 43 
+ edge: (v1, v0), weight: 43 
+ edge: (v1, v3), weight: 50 
+ edge: (v1, v2), weight: 36 
+ edge: (v2, v4), weight: 5 
+ edge: (v2, v0), weight: 3 
+ edge: (v2, v3), weight: 24 
+ edge: (v2, v1), weight: 36 
+ edge: (v3, v1), weight: 50 
+ edge: (v3, v2), weight: 24 
+ edge: (v4, v0), weight: 1 
+ edge: (v4, v2), weight: 5
+
+Adjacency matrix of aGraph: 
+
+ 10000 43 3 10000 1
+ 43 10000 36 50 10000
+ 3 36 10000 24 5
+ 10000 50 24 10000 10000
+ 1 10000 5 10000 10000
+
+Minimum spanning tree in aGraph output by Prim's algorithm with different starting vertices: 
+
+MST:  (v4 , v0),  (v2 , v0),  (v3 , v2),  (v1 , v2), 
+MST:  (v2 , v1),  (v0 , v2),  (v4 , v0),  (v3 , v2), 
+MST:  (v0 , v2),  (v4 , v0),  (v3 , v2),  (v1 , v2), 
+MST:  (v2 , v3),  (v0 , v2),  (v4 , v0),  (v1 , v2), 
+MST:  (v0 , v4),  (v2 , v0),  (v3 , v2),  (v1 , v2), 
+
+ 
+Number of vertices in aGraph1:7
+Edges of aGraph1: 
+  
+ edge: (v0, v4), weight: 7 
+ edge: (v0, v3), weight: 12 
+ edge: (v0, v2), weight: 4 
+ edge: (v0, v1), weight: 2 
+ edge: (v0, v6), weight: 1 
+ edge: (v0, v5), weight: 10 
+ edge: (v1, v2), weight: 5 
+ edge: (v1, v0), weight: 2 
+ edge: (v1, v6), weight: 30 
+ edge: (v2, v3), weight: 6 
+ edge: (v2, v1), weight: 5 
+ edge: (v2, v0), weight: 4 
+ edge: (v3, v4), weight: 3 
+ edge: (v3, v0), weight: 12 
+ edge: (v3, v2), weight: 6 
+ edge: (v4, v5), weight: 25 
+ edge: (v4, v3), weight: 3 
+ edge: (v4, v0), weight: 7 
+ edge: (v5, v4), weight: 25 
+ edge: (v5, v0), weight: 10 
+ edge: (v5, v6), weight: 8 
+ edge: (v6, v1), weight: 30 
+ edge: (v6, v0), weight: 1 
+ edge: (v6, v5), weight: 8
+
+Adjacency matrix of aGraph1: 
+
+ 10000 2 4 12 7 10 1
+ 2 10000 5 10000 10000 10000 30
+ 4 5 10000 6 10000 10000 10000
+ 12 10000 6 10000 3 10000 10000
+ 7 10000 10000 3 10000 25 10000
+ 10 10000 10000 10000 25 10000 8
+ 1 30 10000 10000 10000 8 10000
+
+Minimum spanning tree in aGraph1 output by Prim's algorithm with different starting vertices: 
+
+MST:  (v6 , v0),  (v1 , v0),  (v2 , v0),  (v3 , v2),  (v4 , v3),  (v5 , v6), 
+MST:  (v0 , v1),  (v6 , v0),  (v2 , v0),  (v3 , v2),  (v4 , v3),  (v5 , v6), 
+MST:  (v0 , v2),  (v6 , v0),  (v1 , v0),  (v3 , v2),  (v4 , v3),  (v5 , v6), 
+MST:  (v4 , v3),  (v2 , v3),  (v0 , v2),  (v6 , v0),  (v1 , v0),  (v5 , v6), 
+MST:  (v3 , v4),  (v2 , v3),  (v0 , v2),  (v6 , v0),  (v1 , v0),  (v5 , v6), 
+MST:  (v6 , v5),  (v0 , v6),  (v1 , v0),  (v2 , v0),  (v3 , v2),  (v4 , v3), 
+MST:  (v0 , v6),  (v1 , v0),  (v2 , v0),  (v3 , v2),  (v4 , v3),  (v5 , v6), 
